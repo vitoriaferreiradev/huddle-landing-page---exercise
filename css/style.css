@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+ /* GENERAL CONFIGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    margin: 20px 0;
+}
+
+ /* MAIN */
+
+.l-main .content {
+    max-width: 450px;
+}
+
+.l-main .content .btn{
+    color: hsl(257, 40%, 49%);
+    padding: 10px 0;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.3);
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.l-main .content .btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+/* FOOTER */
+
+.l-footer .social-media{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.l-footer .social-media i {
+    color: #fff;
+    border-radius: 100%;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.l-footer .social-media i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) {
+
+    body {
+        background-image: url("../images/bg-mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .l-header .logo {
+        width: 150px;
+        margin: 30px 0;
+    }
+
+    .l-header .logo img{
+        width: 100%;
+    }
+
+    .l-main .mockup {
+        max-width: 650px;
+        margin: 55px 0;
+    }
+
+    .l-main .mockup img{
+        width: 100%;
+    }
+
+    .l-main.center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+        background-size: cover;
+    }
+
+    main{
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .l-main.center{
+        flex-direction: row;
+    }
+
+    .l-main .mockup{
+        flex: 2;
+    }
+
+    .l-main .content{
+        flex: 1;
+        margin-left: 30px;
+    }
+
+    .l-footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
